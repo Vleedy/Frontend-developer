@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Frontend-developer/static/css/main.31fccb33.css",
+    "main.js": "/Frontend-developer/static/js/main.b381f3b5.js",
+    "static/media/developer.jpg": "/Frontend-developer/static/media/developer.f73e33b8b9f6d59c0d72.jpg",
+    "static/media/frontend.jpg": "/Frontend-developer/static/media/frontend.15b2d82c5df2ca545c36.jpg",
+    "static/media/photo.jpg": "/Frontend-developer/static/media/photo.e9ce75c3c4d9c8998974.jpg",
+    "static/media/bank.jpg": "/Frontend-developer/static/media/bank.0b7f10b262f4413e1490.jpg",
+    "static/media/map.jpg": "/Frontend-developer/static/media/map.16a3149e3511f4dce1e5.jpg",
+    "static/media/employ.jpg": "/Frontend-developer/static/media/employ.e170242785170ee28a5c.jpg",
+    "static/media/burger.jpg": "/Frontend-developer/static/media/burger.4a80ac4b141addeb6e6c.jpg",
+    "static/media/filter.jpg": "/Frontend-developer/static/media/filter.50ecdf0421c66d96992b.jpg",
+    "static/media/events.jpg": "/Frontend-developer/static/media/events.ab41f6782fe18643c1e5.jpg",
+    "static/media/todo.jpg": "/Frontend-developer/static/media/todo.5bb3b964d479c8f27634.jpg",
+    "static/media/chess.jpg": "/Frontend-developer/static/media/chess.c58223e9d33b337307fc.jpg",
+    "static/media/skills.svg": "/Frontend-developer/static/media/skills.daf9d2c607bf192076242ffa642f00a2.svg",
+    "static/media/react.svg": "/Frontend-developer/static/media/react.c2fc64b1636d5f26b8bf7f8d9cbc24f8.svg",
+    "static/media/linkedin.svg": "/Frontend-developer/static/media/linkedin.d9456b5b485d0e931ba0f3a5eabcf059.svg",
+    "static/media/telegram.svg": "/Frontend-developer/static/media/telegram.d6f8e5f3b4fbb9f7a4a80a8b5f5a0bf1.svg",
+    "static/media/typescript.svg": "/Frontend-developer/static/media/typescript.e58fcaa313f366ac4b74e0e7ec0ce2dc.svg",
+    "static/media/redux.svg": "/Frontend-developer/static/media/redux.85c924f593bf9dab83ef60c07f7d3b27.svg",
+    "static/media/github.svg": "/Frontend-developer/static/media/github.71b8f1813d603b3a51af1ab007b736c7.svg",
+    "index.html": "/Frontend-developer/index.html",
+    "static/media/phone.svg": "/Frontend-developer/static/media/phone.dce005a7c170c66de830a8da69a484ac.svg",
+    "static/media/location.svg": "/Frontend-developer/static/media/location.ba3986d935a717e78532cf970f235846.svg",
+    "static/media/insta.svg": "/Frontend-developer/static/media/insta.00ec5b79098664b1db6c7d8df317fa0b.svg",
+    "static/media/person.svg": "/Frontend-developer/static/media/person.6aa4f4c66b3512ec9b3cc82cc97e2b63.svg",
+    "static/media/mail.svg": "/Frontend-developer/static/media/mail.472665402dbcc3887e627e791ae218e0.svg",
+    "static/media/javascript.svg": "/Frontend-developer/static/media/javascript.3fffb795c7c2ee2174146fccf11fcdc5.svg",
+    "static/media/css.svg": "/Frontend-developer/static/media/css.a67a53a0db8b79d28849f8feaf99a7b6.svg",
+    "static/media/html.svg": "/Frontend-developer/static/media/html.ca31b3dc27b28c75cff941ec99172cf3.svg",
+    "static/media/cross.svg": "/Frontend-developer/static/media/cross.27671b97e638e69cf6764acd860af0ae.svg",
+    "main.31fccb33.css.map": "/Frontend-developer/static/css/main.31fccb33.css.map",
+    "main.b381f3b5.js.map": "/Frontend-developer/static/js/main.b381f3b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31fccb33.css",
+    "static/js/main.b381f3b5.js"
+  ]
+}

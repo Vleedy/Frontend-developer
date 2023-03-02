@@ -1,0 +1,105 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  .text {
+    cursor: default;
+    h1 {
+      font-weight: 900;
+      font-size: 4.8vw;
+      letter-spacing: 0.2em;
+      padding-left: 0.2em;
+      @media (max-width: 700px) {
+        font-size: 50px;
+      }
+      &:hover {
+        color: rgba(255, 255, 255, 0.1);
+        background: url('../../assets/img/chess.jpg') repeat-x;
+        background-size: contain;
+        -webkit-background-clip: text;
+        transition: 0.4s;
+        animation: noice 0.2s infinite;
+      }
+    }
+    h2 {
+      margin-top: 36vh;
+      font-weight: 200;
+      font-size: 2vw;
+      @media (max-width: 700px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+.mouse {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 700px) {
+    display: none;
+  }
+  &__icon {
+    background: none;
+    width: 19px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 40% 40% 28% 28%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .mouse__scroll {
+      width: 2px;
+      height: 6px;
+      background-color: white;
+      animation: scroll linear 1s infinite 0s;
+    }
+  }
+  &__text {
+    font-weight: 100;
+    font-size: 13px;
+    color: white;
+    margin-left: 5px;
+  }
+}
+
+@keyframes noice {
+  0% {
+    background-position: left 0 top 0;
+  }
+  20% {
+    background-position: left 0px top 20px;
+  }
+  40% {
+    background-position: left 0 top 0px;
+  }
+  60% {
+    background-position: left 20px top 0px;
+  }
+  80% {
+    background-position: left 0 top 0px;
+  }
+  100% {
+    background-position: left -80px top 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    margin-top: 3px;
+  }
+  50% {
+    margin-top: 3px;
+  }
+  50% {
+    margin-top: 6px;
+  }
+  100% {
+    margin-top: 3px;
+  }
+}

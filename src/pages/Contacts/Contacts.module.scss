@@ -1,0 +1,214 @@
+@mixin image {
+  background-position: center;
+  border-radius: 10px;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  @media (max-width: 1024px) {
+    justify-content: flex-start;
+    margin-top: 90px;
+  }
+  @media (max-width: 400px) {
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+}
+.photo {
+  background: url('../../assets/img/photo.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  @media (max-width: 1024px) {
+    width: 20vw;
+    height: 20vw;
+  }
+  @media (max-width: 800px) {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 68%;
+  margin-bottom: 10px;
+  @media (max-width: 1024px) {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: flex-start;
+}
+h4 {
+  font-weight: 200;
+  font-size: 1.5vw;
+  padding-left: 5px;
+  @media (max-width: 1024px) {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  @media (max-width: 800px) {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
+.icon {
+  width: 1.5vw;
+  margin-right: 5px;
+  @media (max-width: 1024px) {
+    width: 22px !important;
+  }
+  @media (max-width: 800px) {
+    width: 16px;
+    margin: 0;
+  }
+}
+.mail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  @media (max-width: 1024px) {
+    align-items: center;
+  }
+}
+.projects {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+}
+
+.project {
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px black;
+  width: 16vw;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1024px) {
+    flex-basis: 40%;
+    height: 10vh;
+  }
+  .name {
+    opacity: 0;
+  }
+  &:active {
+    scale: 0.9;
+  }
+  &:hover {
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: 100;
+    scale: 1.05;
+    .name {
+      opacity: 1;
+      z-index: 100;
+    }
+    &:after {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.5;
+    }
+  }
+  &:nth-child(1) {
+    background: url('../../assets/img/projects/burger.jpg');
+    @include image;
+  }
+  &:nth-child(2) {
+    background: url('../../assets/img/projects/bank.jpg');
+    @include image;
+  }
+  &:nth-child(3) {
+    background: url('../../assets/img/projects/todo.jpg');
+    @include image;
+  }
+  &:nth-child(4) {
+    background: url('../../assets/img/projects/map.jpg');
+    @include image;
+  }
+  &:nth-child(5) {
+    background: url('../../assets/img/projects/events.jpg');
+    @include image;
+  }
+  &:nth-child(6) {
+    background: url('../../assets/img/projects/photo.jpg');
+    background-position: left;
+    border-radius: 10px;
+    background-size: cover;
+  }
+  &:nth-child(7) {
+    background: url('../../assets/img/projects/employ.jpg');
+    @include image;
+  }
+  &:nth-child(8) {
+    background: url('../../assets/img/projects/filter.jpg');
+    @include image;
+  }
+}
+.line {
+  height: 0.5px;
+  background: white;
+  margin-bottom: 20px;
+  width: 68%;
+  @media (max-width: 1024px) {
+    width: 88%;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1024px) {
+    align-items: center;
+  }
+}
+.icons_wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1024px) {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+.icons {
+  display: flex;
+  @media (max-width: 1024px) {
+    img {
+      margin: 0 5px;
+      width: 24px !important;
+    }
+  }
+  @media (max-width: 800px) {
+    img {
+      margin: 0 5px;
+      width: 20px !important;
+    }
+  }
+}

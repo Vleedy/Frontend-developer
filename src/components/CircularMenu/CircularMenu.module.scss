@@ -1,0 +1,139 @@
+.menu {
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 800px) {
+    width: 66vw;
+    height: 66vw;
+  }
+}
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 8.1vw;
+  height: 8.1vw;
+  background: white;
+  z-index: 1000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba($color: #000000, $alpha: 0.15);
+  transition: 2s;
+  @media (max-width: 800px) {
+    width: 12.1vw;
+    height: 12.1vw;
+  }
+  img {
+    width: 5vw;
+    opacity: 1;
+    transition: 2s;
+  }
+  &:hover {
+    img {
+      animation: rotateIcon linear 2s infinite 0s;
+    }
+    &:active {
+      box-shadow: inset 0 0 10px black;
+    }
+  }
+}
+.description {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 800px) {
+    width: 33vw;
+    height: 33vw;
+  }
+  h4 {
+    color: white;
+    font-size: 1.8vw;
+    font-weight: 200;
+    @media (max-width: 800px) {
+      font-size: 4vw;
+    }
+  }
+}
+
+.sleep {
+  img {
+    opacity: 0;
+  }
+  width: 0;
+  height: 0;
+  transition: all 2s;
+}
+
+.hide {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transform-origin: 20vw;
+  transition: 1.2s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(calc(20vw - 4vw));
+  @media (max-width: 800px) {
+    transform-origin: 33vw;
+    transform: rotate(0deg) translateX(calc(33vw - 6vw));
+  }
+}
+.active {
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transform-origin: 20vw;
+  transition: 1.2s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(calc(360deg / 6 * var(--i)));
+  @media (max-width: 800px) {
+    transform-origin: 33vw;
+  }
+  &:hover {
+    scale: 1.1;
+    transition: 1s;
+  }
+}
+
+.img__wrapper {
+  background-color: white;
+  border-radius: 50%;
+  width: 8vw;
+  height: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 800px) {
+    width: 12vw;
+    height: 12vw;
+  }
+  &:active {
+    box-shadow: inset 0 0 10px black;
+  }
+}
+
+img {
+  transform: rotate(calc(-360deg / 6 * var(--i)));
+  width: 4vw;
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
